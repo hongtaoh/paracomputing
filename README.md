@@ -28,3 +28,21 @@ and
 ns = [10, 20, 30]
 rs = [0.1, 0.5, 0.9]
 ```
+
+## No parallelism 
+
+If we don't use any parallelism, we process data and implement the three functions this way:
+
+```py
+def process_data_no_parallelism(n, r):
+    data = get_data(n, r)
+    result1 = func1(data)
+    result2 = func2(data)
+    result3 = func3(data)
+    return result1, result2, result3
+
+results_no_parallelism = []
+for n in ns:
+    for r in rs:
+        results_no_parallelism.append(process_data_no_parallelism(n, r))
+```
