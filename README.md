@@ -97,3 +97,8 @@ Task Parallelism Only execution time: 0.3905 seconds
 Data Parallelism Only execution time: 0.1355 seconds
 No Parallelism execution time: 0.3898 seconds
 ```
+
+## Note
+1. The benefits of parallelism depend on many factors, including the complexity of the tasks and data, and your hardware conditions.  
+2. The above is implemented on CPU. Specifically, I ran these on my Mac with M2 Pro Chip. 
+
