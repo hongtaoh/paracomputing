@@ -22,7 +22,7 @@ def get_data(n, r):
     return n * r
 ```
 
-Suppose
+and
 
 ```py
 ns = [10, 20, 30]
